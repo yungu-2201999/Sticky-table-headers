@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Table Headers</title>
+    <style>
+        .sticky-table-headers__sticky {
+            /* Background color */
+            background-color: #9ca3af;
+
+            /* Stick to the left */
+            left: 0;
+            position: sticky;
+
+            /* Displayed on top of other rows when scrolling */
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="sticky-table-headers">
+        <thead>
+            <tr class="sticky-table-headers__sticky">
+                <td>...</td>
+            </tr>
+        </thead>
+        <tbody>
+            ...
+        </tbody>
+    </table>
+
+</body>
+
+</html>
